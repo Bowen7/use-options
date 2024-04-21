@@ -23,9 +23,9 @@ export const createOptions = <T>(defaultOptions: T): OptionsProvider<T> => {
   return new OptionsProvider(defaultOptions)
 }
 
-export const useOptions = <T>(options: OptionsProvider<T>, value?: T): T => {
+export const useOptions = <T>(Options: OptionsProvider<T>, value?: T): T => {
   if (value === undefined) {
-    return options.getValue()
+    return Options.getValue()
   }
   return value
 }

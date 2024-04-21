@@ -19,7 +19,7 @@ class OptionsProvider {
   provide<S>(callback: () => S, value: T | ((defaultValue: T) => T)): S
 }
 
-useOptions = <T>(options: OptionsProvider<T>, value?: T): T
+useOptions = <T>(Options: OptionsProvider<T>, value?: T): T
 ```
 
 ## Usage
