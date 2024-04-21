@@ -1,0 +1,62 @@
+{
+  "name": "use-options",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.0.4",
+  "description": "A library to share options for nested functions, inspired by React Context.",
+  "author": "Bowen <1997bowen@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/bowen7",
+  "homepage": "https://github.com/bowen7/use-options#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bowen7/use-options.git"
+  },
+  "bugs": "https://github.com/bowen7/use-options/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "start": "tsx src/index.ts",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.1.1",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-love": "^47.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "globals": "^15.0.0",
+    "pnpm": "^9.0.4",
+    "prettier": "^3.2.5",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.0"
+  }
+}
