@@ -1,6 +1,10 @@
 # use-options
 
-### Install
+## Notice
+
+This is not a `React` or `Vue` hook, just use it in JS
+
+## Install
 
 ```
 npm install use-options
